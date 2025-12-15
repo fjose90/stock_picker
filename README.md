@@ -1,4 +1,5 @@
 # Stock Picker
+![Ruby CI](https://github.com/<username>/<repo>/actions/workflows/ruby.yml/badge.svg)
 
 ## 📌 Overview
 
