@@ -1,0 +1,40 @@
+AllCops:
+  TargetRubyVersion: 3.2
+  SuggestExtensions: false
+  Exclude:
+    - "bin/*"
+    - "vendor/**/*"
+    - "tmp/**/*"
+    - "node_modules/**/*"
+# Layout
+Layout/LineLength:
+  Max: 120 # aceita linhas maiores
+
+Layout/IndentationWidth:
+  Width: 2 # padrão Ruby
+
+# Métricas
+Metrics/MethodLength:
+  Max: 20 # métodos pequenos, mas flexível
+
+Metrics/ClassLength:
+  Max: 150 # classes um pouco maiores, útil para apps pequenos
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*" # ignora blocos grandes em testes
+
+# Estilo
+Style/StringLiterals:
+  EnforcedStyle: double_quotes # aspas duplas padrão
+
+Style/FrozenStringLiteralComment:
+  Enabled: false # não obriga comentário no topo
+
+Style/Documentation:
+  Enabled: false # não obriga docs de classes pequenas
+
+# Lint
+Lint/Debugger:
+  Enabled: false # permite usar puts/pry sem aviso
+
