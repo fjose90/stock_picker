@@ -1,7 +1,12 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# Define a versão do Ruby (opcional, mas recomendado)
-ruby '3.2.2'
+source "https://rubygems.org"
 
-# Testes
-gem 'rspec'
+ruby ">= 3.0.0"
+
+gem "rubocop", require: false
+gem "rubocop-rspec"
+
+group :development, :test do
+  gem "rspec"
+end
